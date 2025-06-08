@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  font-family: Cambria, sans-serif;
+  font-size: 16px;
+  background: #132135;
+  color: #ccc;
+  height: 100vh;
+}
+
+header {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 20px 30px;
+ background: #16263d;
+ box-shadow: 0 .15px 2px 0.15px rgba(255, 255, 255, 0.541);
+ animation: fadeIn 0.8s ease-in-out;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.logo h1 {
+  font-weight: 200;
+  font-size: clamp(24px,  5vw, 36px);
+  font-family: Montserrat, sans-serif;
+  color: #bbcee7;
+  text-transform: uppercase;
+}
+
+.logo svg {
+  width: 46px;
+  height: 46px;
+  color: goldenrod;
+}
+
+.container {
+  max-width: 900px;
+  margin-inline: auto;
+  padding: 50px 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.input-group {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(12px, 4vw, 18px);
+  flex-wrap: wrap;
+}
+
+input[type="text"] {
+  width: 100%;
+  max-width: 400px;
+  padding: 6px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #bbcee7;
+  transition: border-color 0.3s;
+
+  color: #ddd;
+  font-size: 16px;
+  font-family: Space Mono, sans-serif;
+}
+
+input[type="text"]:focus {
+  border-color: #66a6ff;
+  outline: none;
+}
+
+button {
+  background: #f56565;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #fffffff1;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+button:hover {
+  color: #fffffff1;
+  background: #e95555;
+
+}
+
+.result {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 10px;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.infos {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  color: goldenrod;
+}
+
+.infos strong {
+  color: #ccc;
+}
+
+.map {
+  margin-top: 10px;
+  animation: fadeIn 1s ease-in-out;
+  position: relative;
+  padding: 12px;
+}
+
+.map svg {
+  position: absolute;
+  color: #af1616;
+  top: 10;
+  left: 0;
+  fill: #af1616;
+  transform: rotate(10deg);
+  animation: upToTop 2s ease-out;
+}
+
+img {
+  filter: opacity(.24) blur(1px);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes upToTop {
+  from {
+    transform: translateY(50px) translateX(-50px);
+  }
+  to {
+    transform: translateY(0px) translateX(0px);
+
+  }
+}
