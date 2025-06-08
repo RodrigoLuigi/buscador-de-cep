@@ -1,12 +1,44 @@
-# React + Vite
+# LocalizaCEP 🧭
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**LocalizaCEP** é um projeto de busca de endereços brasileiros através do número do CEP. Desenvolvido com **React**, consome a API pública do [ViaCEP](https://viacep.com.br/) e exibe os dados com uma interface leve, animada e interativa. Também integra o Google Maps para visualizar a localização aproximada do CEP pesquisado.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funcionalidades
 
-## Expanding the ESLint configuration
+- 🔎 Busca de CEP com validação
+- 📍 Exibição dos dados de endereço (rua, bairro, cidade, estado)
+- 🗺️ Mapa embutido via Google Maps
+- 🎨 Interface moderna com animações suaves
+- 📱 Responsivo e leve
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Preview
+
+---
+
+## 🧰 Tecnologias Utilizadas
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [ViaCEP API](https://viacep.com.br/)
+- [Google Maps](https://www.google.com/maps)
+
+---
+
+## 📦 Instalação e uso
+
+```bash
+# Clone o repositório
+git clone https://github.com/RodrigoLuigi/buscador-de-cep.git
+
+# Acesse a pasta
+cd buscador-de-cep
+
+# Instale as dependências
+npm install
+
+# Execute o projeto
+npm run dev
+```
